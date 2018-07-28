@@ -1036,11 +1036,11 @@ int main(int argc, char *argv[])
                     m_omx_reader.SubtitleStreamCount();
   m_loop          = m_loop && m_omx_reader.CanSeek();
 
-  if (m_audio_extension)
-  {
-    CLog::Log(LOGWARNING, "%s - Ignoring video in audio filetype:%s", __FUNCTION__, m_filename.c_str());
-    m_has_video = false;
-  }
+  //if (m_audio_extension)
+  //{
+  //  CLog::Log(LOGWARNING, "%s - Ignoring video in audio filetype:%s", __FUNCTION__, m_filename.c_str());
+  //  m_has_video = false;
+  //}
 
   if(m_filename.find("3DSBS") != string::npos || m_filename.find("HSBS") != string::npos)
     m_3d = CONF_FLAGS_FORMAT_SBS;
